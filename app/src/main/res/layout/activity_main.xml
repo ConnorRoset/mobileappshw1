@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="edu.ualr.cpsc4399.cbroset.hw1.MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pleae enter a temperature to convert"
+        android:id="@+id/prompt"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="sans-serif"
+        android:textSize="18sp" />
+
+    <Button
+        android:text="Fahrenheit to Celcius"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:id="@+id/button_fahrToCel"
+        android:onClick="fahrToCelClick"
+        android:layout_above="@+id/fahrToCellResultTextView"
+        android:layout_alignLeft="@+id/button_celToFahr"
+        android:layout_alignStart="@+id/button_celToFahr"
+        android:layout_marginBottom="14dp" />
+
+    <Button
+        android:text="Celcius to Fahrenheit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button_celToFahr"
+        android:onClick="celToFahrClick"
+        android:layout_below="@+id/prompt"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="42dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/CelToFahrResultTextView"
+        android:layout_below="@+id/button_celToFahr"
+        android:layout_marginTop="15dp"
+        android:text ="@string/blank"
+        android:layout_alignRight="@+id/button_celToFahr"
+        android:layout_alignEnd="@+id/button_celToFahr"
+        android:layout_alignLeft="@+id/button_celToFahr"
+        android:layout_alignStart="@+id/button_celToFahr"
+        android:textAlignment="center" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/fahrToCellResultTextView"
+        android:layout_marginBottom="114dp"
+        android:text="@string/blank"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/button_fahrToCel"
+        android:layout_alignEnd="@+id/button_fahrToCel"
+        android:layout_alignLeft="@+id/button_fahrToCel"
+        android:layout_alignStart="@+id/button_fahrToCel"
+        android:textAlignment="center" />
+</RelativeLayout>

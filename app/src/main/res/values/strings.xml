@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Temperature converter!</string>
+    <string name="title_activity_fahr_to_cel">Fahrenheit To Celcius</string>
+    <string name ="title_activity_cel_to_fahr">Celcius To Fahrenheit</string>
+    <string name="enter_temperature">Enter Temperature</string>
+    <string name="bad_input">Bad Input</string>
+    <string name="blank"></string>
+</resources>
